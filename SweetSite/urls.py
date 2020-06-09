@@ -21,7 +21,7 @@ from SweetSite import settings
 
 
 urlpatterns = [
-    path('SweetOffer/', include('SweetOffer.urls')),
+    path('', include('SweetOffer.urls')),
     path('admin/', admin.site.urls)
 ]
 
