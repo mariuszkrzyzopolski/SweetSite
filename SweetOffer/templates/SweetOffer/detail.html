@@ -1,0 +1,13 @@
+<h1>{{ offer.title }}</h1>
+<p>{{ offer.offer_text }}</p>
+<ul>
+    {% for description in offer.description_set.all %}
+        <li>{{ description.description_text }}</li>
+    {% endfor %}
+</ul>
+<ul>
+    {% for image in offer.image_set.all %}
+    <img src="{{ image.image.url }}">
+    {% endfor %}
+</ul>
+<p>{{ offer.sum_price }}</p>
