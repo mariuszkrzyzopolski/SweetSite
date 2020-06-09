@@ -1,1 +1,1 @@
-web: gunicorn SweetSite:app
+web: gunicorn SweetSite.wsgi.application --log-file -
