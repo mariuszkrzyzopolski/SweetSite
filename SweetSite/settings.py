@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'SweetSite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sweetsite',
-        'USER': 'postgres',
-        'PASSWORD': 'QwE123z',
-        'HOST': '127.0.0.1',
+        'NAME': 'dfcpe6uvgk6fvv',
+        'USER': 'bgtwtzlbrtsmah',
+        'PASSWORD': '612281eb31808b018cf8ffe4ca215c6849a0ce9b6a18b78a5ef2d88270b34f55',
+        'HOST': 'ec2-34-230-231-71.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
