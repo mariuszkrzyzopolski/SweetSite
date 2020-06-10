@@ -1,9 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
 {% if latest_offers_list %}
     <ul>
     {% for offer in latest_offers_list %}
-        <li><a href={% url 'detail' offer.id %}>{{ offer.offer_text }}</a></li>
+        <li><a href={% url 'detail' offer.id %}>{{ offer.title }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No Offers are available.</p>
 {% endif %}
+{% endblock %}

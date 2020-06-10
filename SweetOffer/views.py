@@ -1,7 +1,7 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 
-from SweetOffer.models import Offer
+from SweetOffer.models import Offer, Image
 
 
 def index(request):
@@ -14,3 +14,7 @@ def detail(request, offer_id):
     offer = get_object_or_404(Offer, pk=offer_id)
     return render(request, 'SweetOffer/detail.html', {'offer': offer})
 
+
+def image(request):
+    image_file = request.FILES['image_file'].file.read()
+    Image.objects.create(image=image_file)
