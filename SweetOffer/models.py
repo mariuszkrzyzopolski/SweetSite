@@ -1,7 +1,6 @@
-import datetime
+import math
 
 from django.db import models
-from django.utils import timezone
 
 
 class Ingredient(models.Model):
@@ -25,7 +24,7 @@ class Offer(models.Model):
         price = 0
         for i in all_ingredients:
             price += i.count * i.ingredient.price
-        return price
+        return round(price, 0)
 
 
 class IngredientOffer(models.Model):
