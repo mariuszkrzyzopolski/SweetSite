@@ -88,7 +88,18 @@ WSGI_APPLICATION = 'SweetSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config(conn_max_age=600, default=)}
+DATABASES = {
+'other': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfcpe6uvgk6fvv',
+        'USER': 'bgtwtzlbrtsmah',
+        'PASSWORD': '612281eb31808b018cf8ffe4ca215c6849a0ce9b6a18b78a5ef2d88270b34f55',
+        'HOST': 'ec2-34-230-231-71.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
