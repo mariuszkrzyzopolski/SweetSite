@@ -20,9 +20,6 @@ class Offer(models.Model):
     def __str__(self):
         return self.offer_text
 
-    def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=7)
-
     def sum_price(self):
         all_ingredients = IngredientOffer.objects.filter(offer=self)
         price = 0
@@ -39,7 +36,7 @@ class IngredientOffer(models.Model):
 
 class Image(models.Model):
     offer = models.ForeignKey(Offer, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='img')
+    image_link = models.CharField(max_length=300)
 
 
 class Description(models.Model):
