@@ -10,7 +10,7 @@
 </ul>
 <ul class="col s10 row">
     {% for image in offer.image_set.all %}
-    <img class="col s6" src="{{ image.image_link }}">
+    <img class="col s6" src="{{ image.image_link }}.jpg">
     {% endfor %}
 </ul>
 {% endblock %}
