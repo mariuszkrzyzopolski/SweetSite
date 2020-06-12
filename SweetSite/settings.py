@@ -25,10 +25,10 @@ STATIC_URL = '/static/'
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'vkpsysqu2v#4*e^p%uj(c_)k)qpg5h*c18yy$w4!&+1k&q-a=p'
+SECRET_KEY = os.environ['SECRET']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 MEDIA_ROOT = (
     BASE_DIR
