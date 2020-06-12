@@ -13,11 +13,10 @@ class Ingredient(models.Model):
 
 class Offer(models.Model):
     title = models.CharField(max_length=50)
-    offer_text = models.CharField(max_length=300)
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
-        return self.offer_text
+        return self.title
 
     def sum_price(self):
         all_ingredients = IngredientOffer.objects.filter(offer=self)
@@ -39,7 +38,7 @@ class Image(models.Model):
 
 
 class Description(models.Model):
-    description_text = models.CharField(max_length=100)
+    description_text = models.CharField(max_length=300)
     offer = models.ForeignKey(Offer, on_delete=models.CASCADE)
 
     def __str__(self):

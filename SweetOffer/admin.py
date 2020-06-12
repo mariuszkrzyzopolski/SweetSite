@@ -19,7 +19,7 @@ class ImageInline(admin.TabularInline):
 
 class OfferAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['title', 'offer_text']}),
+        (None, {'fields': ['title']}),
         ('Data publikacji', {'fields': ['pub_date']}),
     ]
     inlines = [IngredientInline, DescriptionInline, ImageInline]
