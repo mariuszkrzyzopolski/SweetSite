@@ -12,9 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="37f753c7-5677-40c4-8ed9-6eb774b029e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SweetOffer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/SweetOffer/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SweetOffer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/SweetOffer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SweetOffer/templates/SweetOffer/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/SweetOffer/templates/SweetOffer/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SweetSite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SweetSite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\warhir\Documents\projects\SweetSite" />
       <recent name="C:\Users\warhir\Documents\projects\SweetSite\SweetOffer\templates\SweetOffer" />
       <recent name="C:\Users\warhir\Documents\projects\SweetSite\SweetOffer" />
     </key>
@@ -104,10 +104,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="406" y="159" width="1107" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591091473200" />
-    <state x="598" y="280" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591694877485">
+    <state x="598" y="280" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591952602794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="280" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591694877485" />
+    <state x="598" y="280" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591952602794" />
     <state x="559" y="151" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591092453405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

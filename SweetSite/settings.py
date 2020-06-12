@@ -9,10 +9,9 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-import dj_database_url
 import django_heroku
 import os
-import psycopg2
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -84,7 +83,7 @@ WSGI_APPLICATION = 'SweetSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config(conn_max_age=600, default='postgres://bgtwtzlbrtsmah:612281eb31808b018cf8ffe4ca215c6849a0ce9b6a18b78a5ef2d88270b34f55@ec2-34-230-231-71.compute-1.amazonaws.com:5432/dfcpe6uvgk6fvv')}
+DATABASES = {'default': dj_database_url.config(conn_max_age=600, default=os.environ['DATABASE_URL'])}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
