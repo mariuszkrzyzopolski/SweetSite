@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Offer, Ingredient, Description, Image, IngredientOffer
+from .models import Offer, Ingredient, Description, Image, IngredientOffer, Type
 
 
 class IngredientInline(admin.TabularInline):
@@ -21,9 +21,11 @@ class OfferAdmin(admin.ModelAdmin):
     fieldsets = [
         (None, {'fields': ['title']}),
         ('Data publikacji', {'fields': ['pub_date']}),
+        ('Typ', {'fields': ['type_offer']})
     ]
     inlines = [IngredientInline, DescriptionInline, ImageInline]
 
 
 admin.site.register(Offer, OfferAdmin)
 admin.site.register(Ingredient)
+admin.site.register(Type)
