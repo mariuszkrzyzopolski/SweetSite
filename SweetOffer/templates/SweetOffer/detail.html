@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class="col s12 truncate center-align">{{ offer.title }}</h1>
+<h1 class="col s12 center-align">{{ offer.title }}</h1>
 <div class="col s12">{{ offer.offer_text }}</div>
-<ul class="col s5">
+<ul class="col s6">
     {% for description in offer.description_set.all %}
         <li style="font-size:20px">{{ description.description_text }}</li>
     {% endfor %}
     <li style="font-size:22px">{{ offer.sum_price }} zł</li>
 </ul>
 {% for image in offer.image_set.all %}
-<img class="col s5 hoverable" src="{{ image.image_link }}.jpg">
+<img class="col s6 hoverable" src="{{ image.image_link }}.jpg">
 {% endfor %}
 {% endblock %}

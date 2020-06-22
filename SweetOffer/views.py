@@ -1,13 +1,19 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 
-from SweetOffer.models import Offer, Image
+from SweetOffer.models import Offer, Type
 
 
 def index(request):
-    latest_offers_list = Offer.objects.order_by('-pub_date')
-    context = {'latest_offers_list': latest_offers_list}
+    types = Type.objects.all()
+    context = {'types': types}
     return render(request, 'SweetOffer/index.html', context)
+
+
+def offer_list(request, type_id):
+    offers_by_type = Offer.objects.filter(type_offer=type_id)
+    context = {'offers_by_type': offers_by_type}
+    return render(request, 'SweetOffer/offer_list.html', context)
 
 
 def detail(request, offer_id):

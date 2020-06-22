@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="col s12 center-align">Aktualna lista wyrobów</h2>
+{% if offers_by_type %}
+    <ul class="collection">
+    {% for offer in offers_by_type %}
+        <li sty><a class="collection-item" href={% url 'detail' offer.id %}>{{ offer.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Aktualnie nie ma żadnych ofert dla tego typu</p>
+{% endif %}
+{% endblock %}
