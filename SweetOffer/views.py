@@ -12,7 +12,8 @@ def index(request):
 
 def offer_list(request, type_id):
     offers_by_type = Offer.objects.filter(type_offer=type_id)
-    context = {'offers_by_type': offers_by_type}
+    type_name = Type.objects.get(pk=type_id)
+    context = {'offers_by_type': offers_by_type, 'type_name': type_name}
     return render(request, 'SweetOffer/offer_list.html', context)
 
 
