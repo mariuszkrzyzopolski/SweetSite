@@ -36,7 +36,7 @@ MEDIA_ROOT = (
 
 MEDIA_URL = '/media/'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://sweetsite.herokuapp.com/']
 
 # Application definition
 
