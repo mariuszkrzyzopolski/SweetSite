@@ -28,7 +28,7 @@ STATIC_URL = '/static/'
 SECRET_KEY = os.environ['SECRET']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 MEDIA_ROOT = (
     BASE_DIR
