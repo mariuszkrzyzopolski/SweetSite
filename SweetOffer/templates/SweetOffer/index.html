@@ -3,8 +3,7 @@
 <h1 class="col s12 center-align">Rodzaje wypieków</h1>
 {% if types %}
     {% for type in types %}
-        <img src=" {{ type.image }} ">
-        <a class="col s6 waves-effect waves-light btn-large blue" href={% url 'offer_list' type.id %}>{{ type.type_name }}</a></li>
+        <a class="col s6 waves-effect waves-light btn-large brown darken-2" href={% url 'offer_list' type.id %}>{{ type.type_name }}<img src=" {{ type.image }} "></a>
     {% endfor %}
 {% else %}
     <p>Nie dodano żadnych typów.</p>
