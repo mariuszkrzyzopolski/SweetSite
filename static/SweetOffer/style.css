@@ -1,5 +1,7 @@
 body {
+    height:1500px;
     font-family: 'Hepta Slab', serif;
     color: #795548;
-    background-image: #A5A58D;
+    background: rgb(165,165,141);
+    background: linear-gradient(rgba(165,165,141,1) 0%, rgba(179,179,204,1) 100%);
 }
